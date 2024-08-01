@@ -1,0 +1,113 @@
+.title{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    .heading{
+        text-align: center;
+        font-size: 50px;
+        .liner{
+            font-size: 15px;
+            font-style: italic;
+        }
+    }
+}
+.panel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+    height: 100%;
+    
+    .leftpanel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            input{
+                padding: 10px;
+                font-size: 20px;
+                background: #000000b4;
+                border: none;
+                outline: none;
+                color: white;
+            }
+            button{
+                padding: 10px;
+                font: 500;
+                font-size: 20px;
+                border: none;
+                outline: none;
+                background: rgb(1, 1, 99);
+                color: white;
+                border-radius: 10px;
+                cursor: pointer;
+
+                &:disabled{
+                    opacity: 50%;
+                }
+            }
+        }
+    }
+
+    .separator{
+        border: 1px solid white;
+        height: 70%;
+    }
+
+    .rightpanel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            img{
+                height: 30px;
+                width: 30px;
+                object-fit: contain;
+            }
+            input{
+                padding: 10px;
+                font-size: 20px;
+                background: #000000b4;
+                border: none;
+                outline: none;
+                color: white;
+            }
+            label{
+                display: flex;
+                width: 50%;
+                align-items:center;
+                justify-content: space-between;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            button{
+                padding: 10px;
+                font: 500;
+                font-size: 20px;
+                border: none;
+                outline: none;
+                background: rgb(1, 1, 99);
+                color: white;
+                border-radius: 10px;
+                cursor: pointer;
+                &:disabled{
+                    opacity: 50%;
+                    cursor:none;
+                }
+            }
+        }
+    }
+
+}

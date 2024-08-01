@@ -1,0 +1,138 @@
+.chat{
+    flex:2;
+    border-left:1px solid rgba(255, 255, 255, 0.685) ;
+    border-right: 1px solid rgba(255, 255, 255, 0.685);
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.685);
+    .user{
+        display: flex;
+        gap: 10px;
+        .propic{
+            object-fit: cover;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        span{
+            font-weight: bolder;
+            font-size: 25px;
+            color: white;
+        }
+        p{
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(211, 199, 199);
+        }
+    }
+    .icon{
+        display: flex;
+        gap: 10px;
+        img{
+            width: 20px;
+            cursor: pointer;
+        }
+    }
+        
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    padding: 10px;
+    overflow: auto;
+    gap: 20px;
+    .message{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        gap: 10px;
+        
+        &.own{
+            flex-direction: column;
+            align-self: flex-end;
+            background: #02146698;
+            .imagedata{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                object-fit: contain;
+            }
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+    .msgyoublock{
+        font-weight: bolder;
+        color: rgb(180, 30, 30);
+        font-size: 20px;
+    }
+    .msginfo{
+        padding: 10px;
+        border-radius: 10px;
+        background: #00000098;
+        div{
+            font-size: 10px;
+        }
+    }
+
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.685);
+    div>img{
+        width: 20px;
+        cursor: pointer;
+    }
+    input{
+        flex: 1;
+        background: #0000007c;
+        outline: none;
+        border: none;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 10px;
+        color: white;
+    }
+    .icons{
+        display: flex;
+        gap: 10px;
+        label>img{
+            width: 20px;
+            cursor: pointer;
+        }
+    }
+    button{
+        padding: 12px 20px;
+        background: rgb(1, 1, 114);
+        font-size: 15px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-weight: 500;
+    }
+    .emoji{
+        position: relative;
+        .picker{
+            position: absolute;
+            bottom: 40px;
+        }
+    }
+}
